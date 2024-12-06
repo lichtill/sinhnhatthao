@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      
+      <link rel="stylesheet" href="indexstyle.css">
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Trần Thạch Thảo</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab"rel="stylesheet"/> 
+   <link rel="shortcut icon" type="image/png" href="birthday.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   
+  
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  
+  </head>
+   <body>
+    <div id="container" style="display:none">
+      <div class="s-2"></div>
+      <div class="card">
+          <div class="sides left-side">
+              <h1 class="profession"> Happy</h3>
+              <h3 class="name">Trần Thạch </h3>                
+          </div>                     
+          <div class="sides right-side">
+              <h1 class="profession"> Birthday</h3>
+              <h3 class="name"> Thảo</h3>            
+              </div>       
+          <div class="back-side">
+              <p class="biography">
+                  Tuổi 20 - một cột mốc mới, một chương mới vừa được bước sang.Tuổi 20 là thời gian để học hỏi, để trải nghiệm, và để vấp ngã. Nhưng cũng chính nhờ những trải nghiệm đó, bà sẽ ngày càng hoàn thiện bản thân hơn, hiểu rõ hơn về con người mình và thế giới xung quanh. Hãy dũng cảm sống hết mình, đừng sợ thất bại, vì tuổi trẻ chính là thời gian quý giá để thử thách và trưởng thành. Mọi chuyện rồi sẽ ổn thui, tuổi 20 hãy sống với tất cả sự nhiệt huyết, khát khao và tình yêu. Chúc bạn một ngày sinh nhật tràn ngập niềm vui, kỷ niệm đẹp, và thật nhiều yêu thương.
+  
+  
+  
+              </p>
+          </div>
+          
+          <button class="button" onClick="window.open('wish.html');">
+            A Message For You
+       </button>
+
+          <!-- <a href="wish.html">
+              <button onclick="wish.html" >A Message For You</button>            
+          </a> -->
+      </div>
+      <div class="s-1"></div>
+      <div class="right-col">
+        <img src="images/play.png" id="icon">
+      </div>
+      </div>
+      <span id="count"></span>
+
+     <div class="lording" >
+      <div class="center">
+         <div class="ring"></div>
+         <span>loading...</span>
+      </div>
+    </div>
+<div id="home" class="home-style-2 slider-area" style="display:none">
+
+  <div class="particles-js" id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1366" height="606"></canvas></div>
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  <audio id="hbdmp" autoplay loop >
+      
+    <source src="hbd.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    var hbdmp = document.getElementById("hbdmp")
+    var icon = document.getElementById("icon")
+
+    icon.onclick = function(){
+     if(hbdmp.paused){
+       hbdmp.play();
+       icon.src ="images/pause.png";
+     }else{
+       hbdmp.pause();
+       icon.src = "images/play.png";
+     }
+
+    }
+
+  </script>
+  <script>
+
+    setTimeout(function() {
+      $('.lording').hide()
+    }, 5000);
+    
+    setTimeout(function() {
+      $('#container').show()
+    }, 5199);
+    
+    
+    </script>
+    
+</body>
+</html>
